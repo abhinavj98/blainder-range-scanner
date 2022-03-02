@@ -1,8 +1,12 @@
-#Updated fork:
+# Updated fork:
 
 In this fork, the depth map is calculated to be more representative of an actual static depth camera - The main drawback in the default procedure was that the transmitter and the receiver were considered at the same point - Hence no shadowing was seen by the receiver which is a major noise in real world. Hence, a new parameter (DisparityX) was introduced which was the distance between the emitter and the receiver in a depth camera and the depth was calculated considering this case. Furthur infinity was set as max distance instead of 0 (As done in D435)
 
 Example
+
+
+https://user-images.githubusercontent.com/25354763/156462782-d70a53a9-1016-47fe-ad52-fa16f3c99df6.mov
+
 
 
 
