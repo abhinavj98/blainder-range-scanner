@@ -389,7 +389,7 @@ def startScan(context, dependencies_installed, properties, objectName):
                                 properties.dataFilePath, cleanedFileName,
                                 properties.debugLines, properties.debugOutput, properties.outputProgress, properties.measureTime, properties.singleRay, properties.destinationObject, properties.targetObject,
                                 targets, materialMappings,
-                                categoryIDs, partIDs, trees, depsgraph)
+                                categoryIDs, partIDs, trees, depsgraph, properties.disparityX)
 
             startIndex += numberOfHits
 

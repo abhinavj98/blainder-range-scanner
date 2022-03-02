@@ -269,11 +269,11 @@ def performScan(context,
                 simulateDust, particleRadius, particlesPcm, dustCloudLength, dustCloudStart,
                 addMesh,
                 exportLAS, exportHDF, exportCSV, 
-                exportRenderedImage, exportSegmentedImage, exportPascalVoc, exportDepthmap, depthMinDistance, depthMaxDistance, 
+                exportRenderedImage, exportSegmentedImage, exportPascalVoc, exportDepthmap, depthMinDistance, depthMaxDistance,
                 dataFilePath, dataFileName,
                 debugLines, debugOutput, outputProgress, measureTime, singleRay, destinationObject, targetObject,
                 targets, materialMappings,
-                categoryIDs, partIDs, trees, depsgraph):
+                categoryIDs, partIDs, trees, depsgraph, disparityX = 0):
 
     if measureTime:
         startTime = time.time()
@@ -634,7 +634,7 @@ def performScan(context,
                     fileExporter.exportRenderedImage()
 
                 if exportDepthmap:
-                    fileExporter.exportDepthmap(depthMinDistance, depthMaxDistance)
+                    fileExporter.exportDepthmap(depthMinDistance, depthMaxDistance, disparityX)
     else:
         print("No data to export!")
 

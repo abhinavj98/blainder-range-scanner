@@ -7,9 +7,9 @@
   reflectivityUpper: 0.9
   distanceUpper: 120.0
   fovX: 30.0
-  xStepDegree: 1.0
+  xStepDegree: 4
   fovY: 90.0
-  yStepDegree: 1.0
+  yStepDegree: 4
   rotationsPerSecond: 10.0        
 
 - name: Generic sonar

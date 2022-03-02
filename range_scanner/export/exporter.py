@@ -71,6 +71,6 @@ class Exporter:
         from . import export_rendered_image
         export_rendered_image.export(self.filePath, self.fileName)
 
-    def exportDepthmap(self, depthMinDistance, depthMaxDistance):
+    def exportDepthmap(self, depthMinDistance, depthMaxDistance, disparityX):
         from . import export_depthmap
-        export_depthmap.export(self. filePath, self.fileName, self.data, depthMinDistance, depthMaxDistance, self.width, self.height)
+        export_depthmap.export(self. filePath, self.fileName, self.data, depthMinDistance, depthMaxDistance, disparityX, self.width, self.height)

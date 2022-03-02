@@ -10,10 +10,11 @@ MarkupSafe==2.0.1
 # modules needed for the actual add-on
 h5py==3.6.0
 laspy==2.0.3
-numpy==1.19.5
+numpy==1.22.2
 #/pascal_voc_writer
 pascal-voc-writer==0.1.4
 #/png
 pypng==0.0.21
 #/yaml
 PyYAML==6.0
+open3d==0.15.1

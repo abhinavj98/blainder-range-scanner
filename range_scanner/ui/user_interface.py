@@ -513,7 +513,7 @@ class ScannerProperties(PropertyGroup):
     # SCANNER
     fovX: FloatProperty(
         name = "Horizontal FOV",
-        description = "Horizontal field of view in degrees",
+        description = "Do you work?",
         default = 90.0,
         min = 0.0,
         max = 360.0
@@ -525,6 +525,14 @@ class ScannerProperties(PropertyGroup):
         default = 45,
         min = 0.0,
         max = 360.0
+    )
+
+    disparityX: FloatProperty(
+        name = "Horizontal disparity",
+        description = "Horizontal disparity between transmitter and receiver in metres",
+        default = 0.1,
+        min = 0.0,
+        max = 2.0
     )
 
 
@@ -1895,9 +1903,9 @@ class OBJECT_PT_SCANNER_PANEL(MAIN_PANEL, Panel):
             horizontalLayout = layout.row()
             horizontalLayout.prop(properties, "fovY")
             horizontalLayout.prop(properties, "resolutionY")
-
+           
             layout.separator()
-
+            layout.prop(properties, "disparityX")
             layout.prop(properties, "resolutionPercentage")
 
 class OBJECT_PT_ANIMATION_PANEL(MAIN_PANEL, Panel):
