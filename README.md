@@ -1,3 +1,11 @@
+#Updated fork:
+
+In this fork, the depth map is calculated to be more representative of an actual static depth camera - The main drawback in the default procedure was that the transmitter and the receiver were considered at the same point - Hence no shadowing was seen by the receiver which is a major noise in real world. Hence, a new parameter (DisparityX) was introduced which was the distance between the emitter and the receiver in a depth camera and the depth was calculated considering this case. Furthur infinity was set as max distance instead of 0 (As done in D435)
+
+Example
+
+
+
 # Range scanner simulation for Blender
 
 This Blender add-on enables you to simulate lidar, sonar and time of flight scanners in your scene. Each point of the generated point cloud is labeled with the object or part id that was set before the simulation. The obtained data can be exported in various formats to use it in machnie learning tasks (see [Examples](#examples) section).
